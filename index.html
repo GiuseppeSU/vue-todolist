@@ -22,9 +22,9 @@
 
             <div class="task-list">
                 <ul class="list">
-                    <li v-for="tasklist in list ">
-                        <span>{{tasklist.text}}</span>
-                        <i class="fa-solid fa-xmark"></i>
+                    <li v-for="(tasklist , index)  in list ">
+                        <span :class="checkDone(tasklist)">{{tasklist.text}}</span>
+                        <i class="fa-solid fa-xmark" @click="removeItem(index)"></i>
                     </li>
                    
                 </ul>

@@ -23,11 +23,17 @@ createApp({
    
   },
   methods : {
-    checkDone(){
-      if (list == true){
-        
+    checkDone(tasklist){
+      if (tasklist.done){
+        return 'strike'
+      }else{
+        return ''
       }
-
+    },
+    
+    removeItem(index){
+    this.list.splice(index , 1)
+    console.log(index);
     }
 
   }
