@@ -66,3 +66,7 @@ li span {
 li i{
     margin-right: 10px;
 }
+
+.strike{
+    text-decoration: line-through;
+}

@@ -22,18 +22,11 @@
 
             <div class="task-list">
                 <ul class="list">
-                    <li>
-                        <span>Fare i compiti</span>
+                    <li v-for="tasklist in list ">
+                        <span>{{tasklist.text}}</span>
                         <i class="fa-solid fa-xmark"></i>
                     </li>
-                    <li>
-                        <span>Fare i compiti</span>
-                        <i class="fa-solid fa-xmark"></i>
-                    </li>
-                    <li>
-                        <span>Fare i compiti</span>
-                        <i class="fa-solid fa-xmark"></i>
-                    </li>
+                   
                 </ul>
             </div>
 
