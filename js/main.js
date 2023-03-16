@@ -3,6 +3,9 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
+      newTask:'',
+       
+      
       list : [
         {
           text : 'fare i compiti',
@@ -34,6 +37,14 @@ createApp({
     removeItem(index){
     this.list.splice(index , 1)
     console.log(index);
+    },
+
+    addTask(){
+      const newText = {
+        text: this.newTask,
+      };
+      this.list.push(newText)
+      this.newTask ='';
     }
 
   }
